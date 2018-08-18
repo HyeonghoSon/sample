@@ -1,18 +1,20 @@
 #include <stdio.h>
 
-typedef struct Grades {
+typedef struct grades {
   char names[20];
   int kor;
   int eng;
   int mat;
-};
+} GRADE_T;
 
 main ()
 {
-  Grades student[2];
+  GRADE_T student[2];
   
   strcpy(student[0].name, "Peter");
   student[0].kor = 81;
   student[0].eng = 73;
   student[0].mat = 93;
+  
+  printf("Name  : %s\n", student[0].name);
 }
